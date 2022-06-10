@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Warriors - Seu Perfil</title>
+    <link rel="stylesheet" href="perfil.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="logo"></div>
+                <ul class="navbar">
+                    <li> <a href="menu.html">Home</a></li>|
+                    <li> <a href="perfil.html"> <b>Seu Perfil</b></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+</body>
+    
+    <div id=info_um class="informacoes" >
+        Nome : Dagoberto <br>
+        Email : <br>
+        Jogo favorito: <br>
+        Jogo mais jogado: <br>
+        Console favorito: <br><br>
+
+        Quer mudar algo? <br> <button onclick="editar()">Clique aqui e edite seu perfil</button>
+    </div>
+
+    <div id="info_inserir" class="informacoes" style="display:none;">
+        Nome : Dagoberto <br>
+        Email : <br>
+        Jogo favorito: <input id=jf><br>
+        Jogo mais jogado: <input id=jj><br>
+        Console favorito: <input id="cf"> <br><br>
+
+        Tudo Certo? <br> <button onclick="concluir()">Clique aqui para finalizar</button>
+    </div>
+
+
+</html>
+<script>
+    function editar(){
+        info_um.style.display='none';
+        info_inserir.style.display='flex';
+    }
+    function concluir(){
+        info_um.style.display='flex';
+        info_inserir.style.display='none';
+    }
+</script>

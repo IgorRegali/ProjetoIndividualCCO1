@@ -1,0 +1,155 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Road Block Add</title>
+  <style>
+    * {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      font-weight: normal;
+      text-align: center;
+      line-height: 1.7;
+    }
+
+    .card {
+      background: #c7c0c0;
+      padding: 20px;
+      color: #ffffff;
+      font-size: 20px;
+      margin: auto;
+    }
+
+    .modal {
+      transition: all .5s ease-in-out;
+      position: absolute;
+      opacity: 0;
+      top: 100;
+      height: 100%;
+      background-color: #ffffff;
+      width: 100%;
+      z-index: 10000;
+    }
+
+    .modal-content {
+      width: 30%;
+      top: 25%;
+      margin: auto;
+      position: relative;
+      background: white;
+
+    }
+
+
+
+
+    .btn-skip {
+      border: none;
+      background: #e3314b;
+      color: #ffffffe3;
+      padding: 10px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      text-align: right;
+      margin-bottom: 10px;
+      border-radius: 5px;
+    }
+
+    .ad {
+      background: #800080;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      padding: 45px 50px;
+      border-radius: 4px;
+    }
+
+    .content {
+      text-align: left;
+      text-transform: uppercase;
+    }
+
+    .highlight {
+      color: #ff0;
+      font-size: 20px;
+      letter-spacing: 1.6px;
+      margin: 12px 0px;
+    }
+
+    .heading {
+      line-height: 1.4;
+      letter-spacing: 6.5px;
+      border-radius: 2px;
+    }
+
+    .website {
+      font-size: 10px;
+      letter-spacing: 2.5px;
+      text-transform: lowercase;
+
+    }
+
+    .visit {
+      padding: 7px 20px;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      border-radius: 15px;
+      border: none;
+      background: linear-gradient(100deg, #afff0a, #7d85ff);
+    }
+  </style>
+</head>
+
+<body>
+  <h1>This is homepage.</h1>
+  <div class="card">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati molestias dolorum officiis nostrum, animi quos
+      possimus dolore repellendus vel quasi distinctio neque doloribus non amet aliquid quisquam? Distinctio, ab
+      cupiditate.</p>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <button class="btn-skip">Skip Ad</button>
+      <!-- <img src="ukmodal-on-page-load.gif" alt="" srcset=""> -->
+
+      <div class="ad">
+        <div class="content">
+          <h1 class="heading">Learn Coding <br>
+            <h6 class="highlight">
+              For Free
+            </h6>
+
+
+            <button class="visit">Learn More</button>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const modal = document.querySelector(".modal");
+      modal.style.opacity = "1"
+      modal.style.top = "0"
+
+      const skip = document.querySelector(".btn-skip");
+      skip.addEventListener("click", () => {
+        modal.style.opacity = "0"
+        console.log(modal)
+      })
+
+    })
+  </script>
+</body>
+
+</html>

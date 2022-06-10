@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Warriors - Notícias</title>
+    <link rel="stylesheet" href="site.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="logo"></div>
+                <ul class="navbar">
+                    <li> <a href="menu.html">Home</a></li> |
+                    <li> <a href="not.html"><b>Notícias</b></a></li> |
+                    <li> <a href="reco.html">Recomendações</a></li> |
+                    <li> <a href="rank.html">Rank</a></li> |
+                    <li> <a href="sobre.html">Sobre Nós</a></li> |
+                    <li> <a href="perfil.html">Seu Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="noticias">
+        <img id=idn style="display:none;">
+    </div>
+    <div class="mais_noticiais">
+        <div class="esquerda">
+        <div class="not_tit">Poder dos memes aumenta jogadores de Metal Gear Rising: Revengeance em 1000%</div> <br>
+        <div class="not_sub">O game de 2013 está sendo redescoberto por um número cada vez maior de pessoas</div>
+        <div class="not_tit">Poder dos memes aumenta jogadores de Metal Gear Rising: Revengeance em 1000%</div> <br>
+        <div class="not_sub">O game de 2013 está sendo redescoberto por um número cada vez maior de pessoas</div>
+        <div class="not_tit">Poder dos memes aumenta jogadores de Metal Gear Rising: Revengeance em 1000%</div> <br>
+        <div class="not_sub">O game de 2013 está sendo redescoberto por um número cada vez maior de pessoas</div>
+        
+
+        </div>
+
+        <div class="direita">
+            <div class="not_tit">Metal Gear Rising: Revengeance em 1000%</div> <br>
+            <div class="not_sub">O game de 2013 está sendmeueidhjbdbadijhbhsbndidjsjbskjbor um número cada vez maior de pessoas</div>
+            <div class="not_tit">Poder dos memes aumenta jogadores de Metal Gear Rising: Revengeance em 1000%</div> <br>
+        <div class="not_sub">O game de 2013 está sendo redescoberto por um número cada vez maior de pessoas</div>
+        <div class="not_tit">Poder dos memes aumenta jogadores de Metal Gear Rising: Revengeance em 1000%</div> <br>
+        <div class="not_sub">O game de 2013 está sendo redescoberto por um número cada vez maior de pessoas</div>
+        
+            </div>
+
+    </div>
+    <div class="footer" style="background-color:#ffffff;">
+        <div class="container">
+            <div class="meio_de_contato">
+                Telefone: <br><br>
+                Email:  <br><br>
+                Whatsapp: <br><br>
+    
+            </div>
+            <div class = "redes">
+                Instagram: <br><br>
+                Facebook: <br><br>
+                Twitter: <br><br>
+            </div>
+            <div class="outros">
+                Endereço: Rua A <br><br>
+                FAQ <br><br>
+                Config. de Privacidade<br><br>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
+<script>
+            
+            var imagens_noti = ['unnamed (11).png','unnamed (2).png','FRa7TYCacAATFp2.jpg','Design sem nome.png'];
+            var i = 0;
+
+            idn.src = imagens_noti[imagens_noti.length -1];
+            idn.style.display = 'block';
+
+            setInterval(() => mudar_imagens(), 10000)
+            function mudar_imagens(){
+                idn.src = imagens_noti[i];
+                idn.style.display = 'block';
+                if (i == 2) {
+                    i = 0
+                } else {
+                    i++
+                }
+            }
+   
+</script>

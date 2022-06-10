@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunidade Warriors - Recomendações</title>
+    <link rel="stylesheet" href="site.css">
+
+</head>
+
+<body>
+    <header>
+
+        <div class="header">
+            <div class="container">
+                <div class="logo"></div>
+                <ul class="navbar">
+                    <li> <a href="menu.html">Home</a></li> |
+                    <li> <a href="not.html">Notícias</a></li> |
+                    <li> <a href="reco.html"><b>Recomendações</b></a></li> |
+                    <li> <a href="rank.html">Rank</a></li> |
+                    <li> <a href="sobre.html">Sobre Nós</a></li> |
+                    <li> <a href="perfil.html">Seu Perfil</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="titulo">
+        Apenas os melhores passarão
+
+    </div>
+    <div class="subtitulo">
+        Aqui você encontra nossas recomendações bimestrais de jogos,
+        Fique ligado pois a lista não para de aumentar!
+    </div>
+    <div class="transicao_SparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaR">RED DEAD REDEMPTION</div>
+    <div class=reddead>
+        <video src="trailers/rdr_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_RparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaH">HALF-LIFE: ALYX</div>
+
+    <div class=halflife>
+        <video src="trailers/halflife_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_HparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaHS">HUNT SHOWDOWN</div>
+    <div class=huntshow>
+        <div class="sobre">OSJIHBHSJNM,.SMNHSJKOJHBVC SJSHBV Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Alias quibusdam veniam incidunt voluptatem, exercitationem ipsa odit quasi, at doloribus rerum eum expedita
+            blanditiis numquam, sequi provident quidem molestiae dolorem eveniet?</div>
+        <video src="trailers/hunt_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_HSparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaI">INSURGENCY:SANDSTORM</div>
+    <div class=insurgency>
+        <video src="trailers/ins_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_IparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaM">MINECRAFT</div>
+    <div class=minecraft>
+        <video src="trailers/mine_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_MparaF"></div>
+    <div class="fixa"></div>
+
+
+
+    <div class="transicao_FparaP">PROJECT ZOMBOID</div>
+    <div class=project>
+        <video src="trailers/projectzomboid_trailer.mp4" loop autoplay muted></video>
+    </div>
+    <div class="transicao_PparaF"></div>
+    <div class="fixa"></div>
+
+    <div class="transicao_FparaREC">
+        Quer mais recomendações?
+    </div>
+    <div class="mais_reco">
+        Então insira o número de jogos que gostaria de ver!(Número máximo 50) <br> <br>
+        <input id="qtd_reco"> <br> <br>
+        <button onclick="exibir()">Exibir</button>
+        <span id="lista_mais_reco"></span>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="meio_de_contato">
+                Telefone: <br><br>
+                Email: <br><br>
+                Whatsapp: <br><br>
+
+            </div>
+            <div class="redes">
+                Instagram: <br><br>
+                Facebook: <br><br>
+                Twitter: <br><br>
+            </div>
+            <div class="outros">
+                Endereço: Rua A <br><br>
+                FAQ <br><br>
+                Config. de Privacidade<br><br>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+<script>
+
+    var jogos = ['The Last of Us', 'Mineirinho', 'We were here', 'Left 4 Dead 2', '911 Operator', 'Super Hot', 'Gta Vice City', 'CSGO', 'Phasmophobia', 'Factorio', 'Insurgency', 'SimCity 5', 'The Sims', 'Forza Horizon', 'Day z'];
+
+    function exibir() {
+        var qr = Number(qtd_reco.value) - 1;
+        for (var i = 0; i <= qr; i++) {
+            lista_mais_reco.innerHTML += `<br> ${jogos[i]}<br>`
+        }
+    }
+
+
+</script>
