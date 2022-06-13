@@ -9,40 +9,26 @@
     <link rel="stylesheet" href="css/intro.css">
 </head>
 <body>
-    <div id="capa">
+    <div class="capa">
         <h1>Comunidade Warriors</h1>
         <img src="https://c.tenor.com/lKbQy9oa030AAAAC/mgrv-raiden-punching-armstrong.gif"> <br>
-        Este site é um site exclusivo para os membros da comunidade Warriors <br><br>
-        Por favor faça Login para poder prosseguir <br><br>
-        Nick: 
-        <input id="nome"> <br><br>
-        Senha:
-        <input id="senha">
-        <button onclick="prosseguir()">Fazer Login</button>
+        <span>Este site é um site exclusivo para os membros da comunidade Warriors </span> <br><br>
+        <span> Por favor faça Login para poder prosseguir </span><br><br>
+
+
+            <span>E-mail:</span> <br>
+            <input id="email_input" type="text" placeholder="Login"> <br>
+    
+            <span>Senha:</span> <br>
+            <input id="senha_input" type="password" placeholder="******"> <br>
+    
+            <button class="btn" onclick="entrar()">Entrar</button> <br>
+    
+    
         Não possui uma Conta? <a href="cadastro.html">Clique aqui para criar</a> <br>
         Igor Regali CCO1 RA 02221048
     </div>
-    <div class="formulario">
 
-
-        <span class="tipo_campo">E-mail:</span>
-        <input id="email_input" type="text" placeholder="Login">
-
-        <span class="tipo_campo">Senha:</span>
-        <input id="senha_input" type="password" placeholder="******">
-
-        <button class="btn" onclick="entrar()">Entrar</button>
-
-
-    </div>
-
-    <div id="div_aguardar" class="loading-div">
-        <img src="./assets/circle-loading.gif" id="loading-gif">
-    </div>
-
-    <div id="div_erros_login">
-
-    </div>
 </div>
 </div>
 </div>
