@@ -96,7 +96,7 @@ body {
 .banner {
   height: fit-content;
   padding: 40px 0;
-  background-image: url(https://maisgeek.com/wp-content/uploads/2020/10/steam-games.png);
+  background-image: url(i662xt6y2z481.webp);
   background-size: cover;
 }
 
@@ -107,17 +107,22 @@ body {
 }
 
 .banner p {
+  background-color: rgba(0, 0, 0, 0.9);
   border: #ff4800 solid 2px;
-  background-color: #000000;
+  -moz-border-radius:0 20px;-webkit-border-radius:0 20px;border-radius:0 20px;
   width: 50%;
   font-size: 400%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: #ffffff;
   font-family: sans-serif;
   font-weight:normal;
+  padding: 1%;
 }
+
+
 
 .footer .container{
   background-color: #191818;
@@ -150,7 +155,9 @@ body {
 }
 
 .mais_noticiais {
-  padding: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
   background-color: #ffffff;
   height: 800px;
   font-family: 'Bebas Neue', cursive;
@@ -419,8 +426,7 @@ body {
 
 .esquerda{
   align-items:flex-start;
-  padding-right:10%
-
+  padding-right: 10%;
 }
 .direita{
   align-items:flex-end;
@@ -457,4 +463,13 @@ padding-left: 1%;
 .not:hover{
   color:#ff4800;
   
+}
+
+.mais_noticiais_titulo{
+  display: flex;
+justify-content: center;
+align-items: center;
+background-color: #ffffff;
+padding-top: 100px;
+font-size: 400%;
 }
