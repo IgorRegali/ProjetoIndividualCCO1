@@ -25,6 +25,12 @@ body {
   font-family: 'Baloo 2', cursive;
 
 }
+.header_2 {
+  border-bottom: 5px solid #8a8c91;
+  background-color: #ff4800;
+  width: 100vw;
+  position: fixed;
+}
 
 .header {
   border-bottom: 5px solid #000000;
@@ -32,6 +38,8 @@ body {
   width: 100vw;
   position: fixed;
 }
+
+
 
 .container {
   width: 80%;
@@ -187,6 +195,7 @@ body {
   display: flex;
   justify-content: center;
   font-family: 'Baloo 2', cursive;
+  color: #ffffff
 }
 
 .transicao_SparaF {
@@ -420,6 +429,7 @@ body {
   justify-content: center;
   flex-direction:column;
   padding: 5%;
+  color:#ffffff;
 }
 
 /*=============================================*/

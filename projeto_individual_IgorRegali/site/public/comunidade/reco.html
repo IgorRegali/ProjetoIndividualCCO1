@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade Warriors - Recomendações</title>
     <link rel="stylesheet" href="site.css">
+    <link rel="icon" href="../assets/icon/icone.png">
 
 </head>
 
@@ -20,7 +21,7 @@
                     <li> <a href="menu.html">Home</a></li> |
                     <li> <a href="not.html">Notícias</a></li> |
                     <li> <a href="reco.html"><b>Recomendações</b></a></li> |
-                    <li> <a href="rank.html">Rank</a></li> |
+                    <li> <a href="quiz.html">Quiz</a></li> |
                     <li> <a href="sobre.html">Sobre Nós</a></li> |
                     <li> <a href="perfil.html">Seu Perfil</a></li>
                 </ul>
@@ -105,25 +106,25 @@
         Então insira o número de jogos que gostaria de ver!(Número máximo 50) <br> <br>
         <input id="qtd_reco"> <br> <br>
         <button onclick="exibir()">Exibir</button>
-        <span id="lista_mais_reco"></span>
+        <div id="lista_mais_reco"></div>
     </div>
     <div class="footer">
         <div class="container">
             <div class="meio_de_contato">
-                Telefone: <br><br>
-                Email: <br><br>
-                Whatsapp: <br><br>
+                Telefone: (11) 3403-6396<br><br>
+                Email: comunidadewarriors@sptech.school<br><br>
+                Whatsapp: (11) 97547-4880<br><br>
 
             </div>
             <div class="redes">
-                Instagram: <br><br>
-                Facebook: <br><br>
-                Twitter: <br><br>
+                Instagram: @comunidade_warriors<br><br>
+                Facebook: Warriors Community<br><br>
+                Twitter: @com_war<br><br>
             </div>
             <div class="outros">
-                Endereço: Rua A <br><br>
-                FAQ <br><br>
-                Config. de Privacidade<br><br>
+                Endereço: Rua Haddock Lobo, 595 <br><br>
+                Youtube: COMWAR Games <br><br>
+                Polit. de Privacidade<br><br>
             </div>
         </div>
     </div>
@@ -135,14 +136,19 @@
 </html>
 <script>
 
-    var jogos = ['The Last of Us', 'Mineirinho', 'We were here', 'Left 4 Dead 2', '911 Operator', 'Super Hot', 'Gta Vice City', 'CSGO', 'Phasmophobia', 'Factorio', 'Insurgency', 'SimCity 5', 'The Sims', 'Forza Horizon', 'Day z'];
+    var jogos = ['The Last of Us', 'Mineirinho', 'We were here', '911 Operator', 'Left 4 Dead 2', '911 Operator', 'Super Hot', 'SCP Secret Laboratory', 'SCP: Containment Breach', 'Tropico 5', 'Gta Vice City', 'CSGO', 'Phasmophobia', 'Factorio', 'Insurgency', 'SimCity 5', 'The Sims', 'Forza Horizon', 'Day z',
+        'Prison Architect', 'Darkest Hour', 'GTA V', 'Gta San Andreas', 'Door Kickers', 'Tropico 4', 'Cities Skylines', 'The Last Of Us 2', '112 Operator', '7 days to die', 'Democracy 3', "Garry's Mod", 'Beamng Drive', 'Dragon Ball Legends', 'Tropico 3', 'This is the Police', 'Just Cause 3', 'Tomb Raider', 'World Of Tanks', 'Terraria',
+        'DEFCON', 'We were here', 'Euro Truck Simulator 2', 'Rising Storm Vietnam', 'Spintires', 'Not For Broadcast', 'Mini Metro', 'Long Live the Queen', 'Ironsight', 'HOI4', 'Halo Infinite'];
 
     function exibir() {
         var qr = Number(qtd_reco.value) - 1;
-        for (var i = 0; i <= qr; i++) {
-            lista_mais_reco.innerHTML += `<br> ${jogos[i]}<br>`
+        if (Number(qtd_reco.value) > 50) {
+            alert('ERRO - APENAS 50 JOGOS')
+        } else {
+            for (var i = 0; i <= qr; i++) {
+                lista_mais_reco.innerHTML += `<br> ${jogos[i]}<br>`
+            }
         }
     }
-
 
 </script>

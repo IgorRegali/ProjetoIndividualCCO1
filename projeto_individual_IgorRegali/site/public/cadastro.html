@@ -8,11 +8,11 @@
     <title>Document</title>
     <script src="./js/funcoes.js"></script>
     <link rel="stylesheet" href="css/intro.css">
-
+    <link rel="icon" href="./assets/icon/icone.png">
 </head>
 
 <body>
-    <div class="campo">
+    <div class="capa_2">
         <span class="tipo_campo">Nome:</span>
         <input id="nome_input" type="text" placeholder="Seu Nome">
 
@@ -29,7 +29,12 @@
         </span>
     </div>
 
+    <div id="div_aguardar" class="loading-div">
+        
+    </div>
+    
     <div id="div_erros_login">
+
 </body>
 
 </html>
@@ -44,7 +49,14 @@
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = confirmacao_senha_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        
+        if(senhaVar == "1234"){
+            alert('ERRO - SENHA SIMPLES')
+            finalizarAguardar();
+            return false;
+        }
+        
+        else if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 
