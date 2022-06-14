@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Nunito+Sans&family=Plus+Jakarta+Sans:wght@200&family=Poppins&family=Righteous&display=swap');
+        .capa_3,
         .capa_2,
         .capa {
             color: white;
@@ -12,8 +13,21 @@
         }
 
         .capa_2{
-            padding-top: 15%;
+            padding-top: 4%;
+            padding-bottom: 1%;
         }
+
+        .box{background-color: #000000;
+            border: #ff4800 10px solid;
+            border-radius: 10px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            height: 320px;
+            padding: 5%;
+            padding-top: 7%
+    }
 
         a {
             text-decoration: none;
@@ -27,4 +41,29 @@
             font-family: 'Baloo 2', cursive;
         }
 
+        button{
+            padding: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+            color:#ffffff;
+            background-color: #000000;
+            border-radius: 30px;
+            border:#ff4800 4px solid;
+            font-size: large;
+            font-family: 'Baloo 2', cursive;
+            display: flex;
+          
+          }
+          
+          input{
+            padding: 1%;
+            padding-left: 5%;
+            padding-right: 2%;
+            color:#ff4800;
+            background-color: #000000;
+            border-radius: 20px;
+            border:#ffffff 4px solid;
+            font-size: large;
+            font-family: 'Baloo 2', cursive;
+          }
         

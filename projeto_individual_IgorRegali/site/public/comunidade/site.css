@@ -541,13 +541,13 @@ font-size: 400%;
 
 button{
   padding: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   color:#ffffff;
   background-color: #000000;
   border-radius: 30px;
   border:#ff4800 4px solid;
-  font-size: xx-large;
+  font-size: large;
   font-family: 'Baloo 2', cursive;
   display: flex;
 
@@ -555,13 +555,13 @@ button{
 
 input{
   padding: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2%;
+  padding-right: 2%;
   color:#ff4800;
   background-color: #000000;
   border-radius: 20px;
   border:#ffffff 4px solid;
-  font-size: xx-large;
+  font-size: large;
   font-family: 'Baloo 2', cursive;
   display: flex;
   align-items: center;
