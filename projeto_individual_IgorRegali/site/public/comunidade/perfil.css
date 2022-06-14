@@ -63,7 +63,7 @@ button{
   padding-right: 1%;
   color:#ffffff;
   background-color: #000000;
-  border-radius: 10%;
+  border-radius: 12px;
   border:#ff4800 2px solid;
   font-size: large;
   font-family: 'Baloo 2', cursive;
@@ -77,7 +77,7 @@ input{
   padding-right: 5%;
   color:#ff4800;
   background-color: #000000;
-  border-radius: 5%;
+  border-radius: 12px;
   border:#ffffff 4px solid;
   font-size: xx-large;
   font-family: 'Baloo 2', cursive;
