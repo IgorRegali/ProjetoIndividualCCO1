@@ -437,10 +437,17 @@ body {
 .esquerda{
   align-items:flex-start;
   padding-right: 10%;
+  width:80%;
 }
 .direita{
   align-items:flex-end;
+  width:80%;
   
+}
+
+.menu_img{
+  align-items:flex-end;
+  padding-right: 10%;
 }
 
 .not_tit{
