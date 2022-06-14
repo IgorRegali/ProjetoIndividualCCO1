@@ -116,7 +116,7 @@ body {
 
 .banner p {
   background-color: rgba(0, 0, 0, 0.9);
-  border: #ff4800 solid 2px;
+  border: #ff4800 solid 10px;
   -moz-border-radius:0 20px;-webkit-border-radius:0 20px;border-radius:0 20px;
   width: 50%;
   font-size: 400%;
@@ -125,7 +125,7 @@ body {
   justify-content: center;
   align-items: center;
   color: #ffffff;
-  font-family: sans-serif;
+  font-family: Bebas Neue, cursive;
   font-weight:normal;
   padding: 1%;
 }

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cruzadinhas</title>
+</head>
+
+<body>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            
+        }
+
+        .container {
+            color: white;
+            align-items: center;
+            display: flex;
+            margin-top: 50px;
+            flex-direction: column;
+
+        }
+
+        .container_um {
+            color: white;
+            align-items: center;
+            display: flex;
+            margin-top: 40px;
+            background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_2.png");
+            height:900px;
+        }
+
+        .container_dois {
+            color: white;
+            align-items: center;
+            display: flex;
+            margin-top: 40px;
+            background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_5.png");
+            height:900px;
+
+        }
+        .container_tres {
+            color: white;
+            align-items: center;
+            display: flex;
+            margin-top: 40px;
+            background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_3.png");
+            height:900px;
+
+        }
+
+        #menu {
+            color: white;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #configuracoes {
+            color: white;
+            align-items: center;
+            flex-direction: column;
+            display: flex;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <div id="menu">
+        <h1>SCP CONTAINMENT BREACH</h1>
+        <img src="https://images-na.ssl-images-amazon.com/images/I/51BmX4FpI9L.jpg"> <br>
+        <button onclick="start()">Inicie a Fuga</button> <br><br>
+        <button onclick="config()">Configurações</button> <br><br>
+        Igor Regali CCO1 RA 02221048
+    </div>
+
+    <div id="configuracoes" style="display:none;">
+        <h2> Músicas: </h2> <br>
+        <h4>(Selecione apenas uma) </h4>
+        <iframe width="1904" height="800" src="https://www.youtube.com/embed/_rpS_Zs-Zsg" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <br>
+        <iframe width="1904" height="800" src="https://www.youtube.com/embed/kjmxI4chUHo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <br>
+        <iframe width="1904" height="800" src="https://www.youtube.com/embed/v_Q7-TkTRIU" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe> <br>
+        <br>
+        <iframe width="1904" height="800" src="https://www.youtube.com/embed/jBOGvut_o9I" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></iframe> <br>
+        <br>
+        <button onclick="voltar()"> Voltar ao Menu</button>
+    </div>
+
+    </div>
+    <div class="container_um" id="pergunta_a" style="display:none;"> Qual é a sigla para Central Process Unit? (Atenção : As respostas devem estar em letra maiúscula) <br>
+        <input id="resposta_a" onchange="a()">
+    </div>
+    <div class="container_um" id="pergunta_b" style="display:none;"> Um circuto digital que realiza operações lógicas e
+        aritméticas. Qual é o nome deste componente? <br>
+        <input id="resposta_b" onchange="b()">
+    </div>
+    <div class="container_um" id="pergunta_c" style="display:none;"> Tipo de memória que se encontra no topo da hierarquia
+        de memória <br>
+        <input id="resposta_c" onchange="c()">
+    </div>
+    <div class="container_um" id="pergunta_d" style="display:none;"> Tipo de memória volátil que tem como nome Random Acess
+        Memory. Qual é a sigla deste componente? <br>
+        <input id="resposta_d" onchange="d()">
+    </div>
+    <div class="container_um" id="pergunta_e" style="display:none;"> Tipo de memória não volátil que oferece dados apenas
+        para leitura <br>
+        <input id="resposta_e" onchange="e()">
+    </div>
+    <div class="container_dois" id="pergunta_f" style="display:none;"> Tipo de memória não volátil que precisa ter seu chip
+        exposto a luz ultravioleta para apagar seu conteúdo <br>
+        <input id="resposta_f" onchange="f()">
+    </div>
+    <div class="container_dois" id="pergunta_g" style="display:none;"> Tipo particular de EEPROM que mantém as informações
+        armazenadas sem a necessidade de uma fonte de energia elétrica <br>
+        <input id="resposta_g" onchange="g()">
+    </div>
+    <div class="container_dois" id="pergunta_h" style="display:none;"> Tipo de memória que precisa ter seu conteúdo copiado
+        na RAM para poder ser executado pela CPU <br>
+        <input id="resposta_h" onchange="h()">
+    </div>
+    <div class="container_dois" id="pergunta_i" style="display:none;"> Permite que periféricos acessem diretamente a RAM sem
+        ocupar processamento <br>
+        <input id="resposta_i" onchange="i()">
+    </div>
+    <div class="container_dois" id="pergunta_j" style="display:none;"> Também conhecido como Slave Select (SS). Usado para
+        selecionar um ou um conjunto de circuitos que estão conectados no computador <br>
+        <input id="resposta_j" onchange="j()">
+    </div>
+    <div class="container_tres" id="pergunta_k" style="display:none;"> Grupo de linhas ou trilhas usadas para se referir a um
+        endereço físico na memória. O número de trilhas determina a quantidade de endereços na memória física <br>
+        <input id="resposta_k" onchange="k()">
+    </div>
+    <div class="container_tres" id="pergunta_l" style="display:none;"> Também chamado de Memory Bus. É responsável para
+        carregar os dados. <br>
+        <input id="resposta_l" onchange="l()">
+    </div>
+    <div class="container_tres" id="pergunta_m" style="display:none;"> Modelo de processador desenvolvido pela Intel quE teve
+        sua primeira versão lançada em setembro de 2009<br>
+        <input id="resposta_m" onchange="m()">
+    </div>
+    <div class="container_tres" id="pergunta_n" style="display:none;"> Modelo de processador desenvolvido pela Intel quE teve
+        sua primeira versão lançada em setembro de 2008<br>
+        <input id="resposta_n" onchange="n()">
+    </div>
+    <div class="container_tres" id="pergunta_o" style="display:none;"> Tipo de processador que possui dois processadores ou
+        melhor dizendo ‘dois centros, núcleos ou cores de execução‘ no mesmo circuito integrado<br>
+        <input id="resposta_o" onchange="o()">
+    </div>
+    <div class="container_tres" id="pergunta_p" style="display:none;"> Segue o mesmo princípio de um dual-core, mas agora em
+        teoria tem o dobro da capacidade de processamento<br>
+        <input id="resposta_p" onchange="p()">
+    </div>
+
+    <div id="final" class="container" style="display:none;">
+        <h2>Você Escapou!</h2>
+        <iframe width="1280" height="720" src="https://www.youtube.com/embed/IhLRGfSPiBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+</html>
+<script>
+    var respostas = ['CPU', 'ULA', 'REGISTRADORES', 'RAM', 'ROM', 'EPROM', 'FLASH', 'MEMÓRIA DE MASSA', 'DMA', 'CS', 'ADRESS BUS', 'DATA BUS', 'I5', 'I7', 'DUAL CORE', 'QUAD CORE'];
+
+    function start() {
+        menu.style.display = 'none';
+        configuracoes.style.display = 'none';
+        pergunta_a.style.display = 'block';
+    }
+
+    function config() {
+        configuracoes.style.display = 'flex';
+        menu.style.display = 'none';
+    }
+
+    function voltar() {
+        configuracoes.style.display = 'none';
+        menu.style.display = 'flex';
+    }
+    function a() {
+        if (resposta_a.value == respostas[0]) {
+            pergunta_a.style.display = 'none';
+            pergunta_b.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function b() {
+        if (resposta_b.value == respostas[1]) {
+            pergunta_b.style.display = 'none';
+            pergunta_c.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function c() {
+        if (resposta_c.value == respostas[2]) {
+            pergunta_c.style.display = 'none';
+            pergunta_d.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function d() {
+        if (resposta_d.value == respostas[3]) {
+            pergunta_d.style.display = 'none';
+            pergunta_e.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function e() {
+        if (resposta_e.value == respostas[4]) {
+            pergunta_e.style.display = 'none';
+            pergunta_f.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function f() {
+        if (resposta_f.value == respostas[5]) {
+            pergunta_f.style.display = 'none';
+            pergunta_g.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function g() {
+        if (resposta_g.value == respostas[6]) {
+            pergunta_g.style.display = 'none';
+            pergunta_h.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function h() {
+        if (resposta_h.value == respostas[7]) {
+            pergunta_h.style.display = 'none';
+            pergunta_i.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function i() {
+        if (resposta_i.value == respostas[8]) {
+            pergunta_i.style.display = 'none';
+            pergunta_j.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function j() {
+        if (resposta_j.value == respostas[9]) {
+            pergunta_j.style.display = 'none';
+            pergunta_k.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function k() {
+        if (resposta_k.value == respostas[10]) {
+            pergunta_k.style.display = 'none';
+            pergunta_l.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function l() {
+        if (resposta_l.value == respostas[11]) {
+            pergunta_l.style.display = 'none';
+            pergunta_m.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function m() {
+        if (resposta_m.value == respostas[12]) {
+            pergunta_m.style.display = 'none';
+            pergunta_n.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function n() {
+        if (resposta_n.value == respostas[13]) {
+            pergunta_n.style.display = 'none';
+            pergunta_o.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function o() {
+        if (resposta_o.value == respostas[14]) {
+            pergunta_o.style.display = 'none';
+            pergunta_p.style.display = 'block';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+    function p() {
+        if (resposta_p.value == respostas[15]) {
+            pergunta_p.style.display = 'none';
+            final.style.display = 'flex';
+        } else {
+            alert('RESPOSTA ERRADA');
+        }
+    }
+
+</script>

@@ -32,28 +32,75 @@
         Jogo mais jogado: <br>
         Console favorito: <br><br>
 
-        Quer mudar algo? <br> <button onclick="editar()">Clique aqui e edite seu perfil</button>
+        Quer mudar algo? <br> <button onclick="mudar()">Clique aqui e edite seu perfil</button>
     </div>
 
     <div id="info_inserir" class="informacoes" style="display:none;">
         Nome : Dagoberto <br>
         Email : <br>
-        Jogo favorito: <input id=jf><br>
-        Jogo mais jogado: <input id=jj><br>
-        Console favorito: <input id="cf"> <br><br>
+        Jogo favorito: <input id=jogo_favorito><br>
+        Jogo mais jogado: <input id=jogo_mais_jogado><br>
+        Console favorito: <input id="console_favorito"> <br><br>
 
-        Tudo Certo? <br> <button onclick="concluir()">Clique aqui para finalizar</button>
+        Tudo Certo? <br> <button onclick="editar()">Clique aqui para finalizar</button>
     </div>
 
 
 </html>
 <script>
-    function editar(){
+    function mudar(){
         info_um.style.display='none';
         info_inserir.style.display='flex';
     }
-    function concluir(){
+
+    function editar(){
         info_um.style.display='flex';
         info_inserir.style.display='none';
+
+    var jogofVar = jogo_favorito.value;
+    var jogojVar = jogo_mais_jogado.value;
+    var consolefVar = console_favorito.value;
+
+    if (jogofVar == "" || jogojVar == "" || consolefVar == "") {
+            finalizarAguardar();
+            return false;
+        }
+        else {
+            setInterval(sumirMensagem, 5000)
+        }
+
+        // Enviando o valor da nova input
+        fetch("/usuarios/editar", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                // crie um atributo que recebe o valor recuperado aqui
+                // Agora vá para o arquivo routes/usuario.js
+                jogo_favoritoServer: jogofVar,
+                jogo_mais_jogadoServer: jogojVar,
+                console_favoritoServer: consolefVar
+            })
+        }).then(function (resposta) {
+
+            console.log("resposta: ", resposta);
+
+            if (resposta.ok) {
+
+                limparFormulario();
+                finalizarAguardar();
+
+            } else {
+                throw ("Houve um erro ao tentar realizar o cadastro!");
+            }
+        }).catch(function (resposta) {
+            console.log(`#ERRO: ${resposta}`);
+            finalizarAguardar();
+        });
+
+        return false;
     }
+    
+    
 </script>

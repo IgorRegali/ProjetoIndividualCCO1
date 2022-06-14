@@ -94,9 +94,46 @@ function cadastrar(req, res) {
     }
 }
 
+//mudei aqui
+
+function editar(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo perfil.html verificar input!!!!!!!!!!!!!!!!!!!!
+    var jf = req.body.jogo_favoritoServer;
+    var jj = req.body.jogo_mais_jogadoServer;
+    var cf = req.body.console_favoritoServer;
+
+    // Faça as validações dos valores
+    if (jf == undefined) {
+        res.status(400).send("Seu Jogo Favorito está undefined!");
+    } else if (jj == undefined) {
+        res.status(400).send("Seu Jogo mais Jogado está undefined!");
+    } else if (cf == undefined) {
+        res.status(400).send("Seu Console Favorito está undefined!");
+    } else {
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.editar(jf, jj, cf)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar o cadastro! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    editar
 }
