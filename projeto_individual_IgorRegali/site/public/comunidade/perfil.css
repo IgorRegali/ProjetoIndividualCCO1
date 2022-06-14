@@ -57,4 +57,32 @@ body {
 
 }
 
+button{
+  padding: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  color:#ffffff;
+  background-color: #000000;
+  border-radius: 10%;
+  border:#ff4800 2px solid;
+  font-size: large;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+
+}
+
+input{
+  padding: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color:#ff4800;
+  background-color: #000000;
+  border-radius: 5%;
+  border:#ffffff 4px solid;
+  font-size: xx-large;
+  font-family: 'Baloo 2', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
