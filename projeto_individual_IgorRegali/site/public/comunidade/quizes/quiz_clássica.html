@@ -42,6 +42,7 @@ font-family: 'Righteous', cursive*/
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_2.png");
             height:900px;
+            flex-direction: column;
         }
 
         .container_dois {
@@ -51,6 +52,7 @@ font-family: 'Righteous', cursive*/
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_5.png");
             height:900px;
+            flex-direction: column;
 
         }
         .container_tres {
@@ -60,6 +62,7 @@ font-family: 'Righteous', cursive*/
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_3.png");
             height:900px;
+            flex-direction: column;
 
         }
 
@@ -127,8 +130,11 @@ font-family: 'Righteous', cursive*/
     </div>
 
     </div>
-    <div class="container_um" id="pergunta_a" style="display:none;"> Qual é a classficação do SCP 173? (Atenção : As respostas devem estar em letra maiúscula) <br>
-        <input id="resposta_a" onchange="a()">
+    <div class="container_um" id="pergunta_a" style="display:none;"><br> Em metal gear rising: revegeance qual a o personagem que corta o braço de raiden? <br><br>
+        <button onclick="certa();a();"> </button> <br>
+            <button onclick="errada()"> </button> <br>
+                <button onclick="errada()"> </button> <br>
+                    <button onclick="errada()"></button> <br>
     </div>
     <div class="container_um" id="pergunta_b" style="display:none;"> Um circuto digital que realiza operações lógicas e
         aritméticas. Qual é o nome deste componente? <br>
@@ -203,7 +209,7 @@ font-family: 'Righteous', cursive*/
     function start() {
         menu.style.display = 'none';
         configuracoes.style.display = 'none';
-        pergunta_a.style.display = 'block';
+        pergunta_a.style.display = 'flex';
     }
 
     function config() {
@@ -215,133 +221,73 @@ font-family: 'Righteous', cursive*/
         configuracoes.style.display = 'none';
         menu.style.display = 'flex';
     }
+    var conta = 0
+    function certa(){
+        conta++
+    }
     function a() {
-        if (resposta_a.value == respostas[0]) {
             pergunta_a.style.display = 'none';
-            pergunta_b.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_b.style.display = 'flex';
     }
     function b() {
-        if (resposta_b.value == respostas[1]) {
             pergunta_b.style.display = 'none';
-            pergunta_c.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_c.style.display = 'flex';
     }
     function c() {
-        if (resposta_c.value == respostas[2]) {
             pergunta_c.style.display = 'none';
-            pergunta_d.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_d.style.display = 'flex';
     }
     function d() {
-        if (resposta_d.value == respostas[3]) {
             pergunta_d.style.display = 'none';
-            pergunta_e.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_e.style.display = 'flex';
     }
     function e() {
-        if (resposta_e.value == respostas[4]) {
             pergunta_e.style.display = 'none';
-            pergunta_f.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_f.style.display = 'flex';
     }
     function f() {
-        if (resposta_f.value == respostas[5]) {
             pergunta_f.style.display = 'none';
-            pergunta_g.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_g.style.display = 'flex';
     }
     function g() {
-        if (resposta_g.value == respostas[6]) {
             pergunta_g.style.display = 'none';
-            pergunta_h.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_h.style.display = 'flex';
     }
     function h() {
-        if (resposta_h.value == respostas[7]) {
             pergunta_h.style.display = 'none';
-            pergunta_i.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_i.style.display = 'flex';
     }
     function i() {
-        if (resposta_i.value == respostas[8]) {
             pergunta_i.style.display = 'none';
-            pergunta_j.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_j.style.display = 'flex';
     }
     function j() {
-        if (resposta_j.value == respostas[9]) {
             pergunta_j.style.display = 'none';
-            pergunta_k.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_k.style.display = 'flex';
     }
     function k() {
-        if (resposta_k.value == respostas[10]) {
             pergunta_k.style.display = 'none';
-            pergunta_l.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_l.style.display = 'flex';
     }
     function l() {
-        if (resposta_l.value == respostas[11]) {
             pergunta_l.style.display = 'none';
-            pergunta_m.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_m.style.display = 'flex';
     }
     function m() {
-        if (resposta_m.value == respostas[12]) {
             pergunta_m.style.display = 'none';
-            pergunta_n.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_n.style.display = 'flex';
     }
     function n() {
-        if (resposta_n.value == respostas[13]) {
             pergunta_n.style.display = 'none';
-            pergunta_o.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_o.style.display = 'flex';
     }
     function o() {
-        if (resposta_o.value == respostas[14]) {
             pergunta_o.style.display = 'none';
-            pergunta_p.style.display = 'block';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
+            pergunta_p.style.display = 'flex';
     }
     function p() {
-        if (resposta_p.value == respostas[15]) {
             pergunta_p.style.display = 'none';
             final.style.display = 'flex';
-        } else {
-            alert('RESPOSTA ERRADA');
-        }
     }
 
 </script>
