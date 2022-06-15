@@ -24,7 +24,7 @@ function validarSessao() {
         b_cff.innerHTML = confav;
         // finalizarAguardar();
     } else {
-        window.location = "../login.html";
+        window.location = "../index.html";
     }
 }
 
