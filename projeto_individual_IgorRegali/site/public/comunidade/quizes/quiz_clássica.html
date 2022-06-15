@@ -10,10 +10,20 @@
 
 <body>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Nunito+Sans&family=Plus+Jakarta+Sans:wght@200&family=Poppins&family=Righteous&display=swap');
+/* font-family: 'Baloo 2', cursive;
+font-family: 'Righteous', cursive*/
         body {
             margin: 0;
             background-color: black;
-            
+            font-family: 'Baloo 2', cursive;
+        }
+
+        button{
+            font-family: 'Baloo 2', cursive;
+            padding: 4%;
+            background-color: #ff4800;
+            color: #ffffff;
         }
 
         .container {
@@ -60,6 +70,18 @@
             flex-direction: column;
             margin-top: 20px;
             margin-bottom: 20px;
+            
+        }
+
+        .caixa{
+            margin-top: 300px;
+        background-color: rgba(0, 0, 0, 0.9);
+            border: #ff4800 5px solid;
+            height: 400px;
+            width: 300px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
         }
 
         #configuracoes {
@@ -71,12 +93,11 @@
             margin-bottom: 20px;
         }
     </style>
-    <div id="menu">
-        <h1>SCP CONTAINMENT BREACH</h1>
-        <img src="https://images-na.ssl-images-amazon.com/images/I/51BmX4FpI9L.jpg"> <br>
-        <button onclick="start()">Inicie a Fuga</button> <br><br>
-        <button onclick="config()">Configurações</button> <br><br>
-        Igor Regali CCO1 RA 02221048
+    <div id="menu" style="background-image: url(../imagens/thumb-1920-371350.jpg); height:900px">
+        <div class="caixa"><h1>Jogos Clássicos</h1><br><br>
+        <button onclick="start()">Inicie o Quiz</button> <br><br><br><br>
+        <button onclick="config()">Configurações</button>
+    </div>
     </div>
 
     <div id="configuracoes" style="display:none;">
