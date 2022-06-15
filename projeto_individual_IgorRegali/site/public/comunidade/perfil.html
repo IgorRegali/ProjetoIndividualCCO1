@@ -7,10 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comunidade Warriors - Seu Perfil</title>
     <link rel="stylesheet" href="perfil.css">
+    <link rel="icon" href="../assets/icon/icone.png">
+    <script src="../js/funcoes.js"></script>
 
 </head>
 
-<body>
+<body onload="validarSessao()">
     <header>
 
         <div class="header">
@@ -26,18 +28,18 @@
 </body>
     
     <div id=info_um class="informacoes" >
-        Nome : Dagoberto <br>
-        Email : <br>
-        Jogo favorito: <br>
-        Jogo mais jogado: <br>
-        Console favorito: <br><br>
+        Nome : <b><span id="b_usuario">user</span></b> <br>
+        Email : <b><span id="b_dominio">email</span></b><br>
+        Jogo favorito: <b><span id="a">undefined</span></b><br>
+        Jogo mais jogado: <b><span id="b">undefined</span></b><br>
+        Console favorito: <b><span id="c">undefined</span></b><br><br>
 
         Quer mudar algo? <br><br> <button onclick="mudar()">Clique aqui e edite seu perfil</button>
     </div>
 
     <div id="info_inserir" class="informacoes" style="display:none;">
-        Nome : Dagoberto <br>
-        Email : <br>
+        Nome : <span id="b_usuario">user</span> <br>
+        Email : <span id="b_dominio">email</span><br>
         Jogo favorito: <input id=jogo_favorito><br>
         Jogo mais jogado: <input id=jogo_mais_jogado><br>
         Console favorito: <input id="console_favorito"> <br><br>
@@ -60,6 +62,10 @@
     var jogofVar = jogo_favorito.value;
     var jogojVar = jogo_mais_jogado.value;
     var consolefVar = console_favorito.value;
+
+        a.innerHTML = `${jogo_favorito.value}`;
+        b.innerHTML = `${jogo_mais_jogado.value}`;
+        c.innerHTML = `${console_favorito.value}`;
 
     if (jogofVar == "" || jogojVar == "" || consolefVar == "") {
             finalizarAguardar();
