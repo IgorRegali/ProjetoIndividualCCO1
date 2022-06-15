@@ -11,7 +11,8 @@
 <body>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Nunito+Sans&family=Plus+Jakarta+Sans:wght@200&family=Poppins&family=Righteous&display=swap');
-/* font-family: 'Baloo 2', cursive;
+
+        /* font-family: 'Baloo 2', cursive;
 font-family: 'Righteous', cursive*/
         body {
             margin: 0;
@@ -19,7 +20,7 @@ font-family: 'Righteous', cursive*/
             font-family: 'Baloo 2', cursive;
         }
 
-        button{
+        button {
             font-family: 'Baloo 2', cursive;
             padding: 4%;
             background-color: #ff4800;
@@ -41,7 +42,7 @@ font-family: 'Righteous', cursive*/
             display: flex;
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_2.png");
-            height:900px;
+            height: 900px;
             flex-direction: column;
         }
 
@@ -51,17 +52,18 @@ font-family: 'Righteous', cursive*/
             display: flex;
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_5.png");
-            height:900px;
+            height: 900px;
             flex-direction: column;
 
         }
+
         .container_tres {
             color: white;
             align-items: center;
             display: flex;
             margin-top: 40px;
             background-image: url("https://media.moddb.com/images/members/5/4513/4512626/profile/v1.0.5_preview_image_3.png");
-            height:900px;
+            height: 900px;
             flex-direction: column;
 
         }
@@ -73,12 +75,12 @@ font-family: 'Righteous', cursive*/
             flex-direction: column;
             margin-top: 20px;
             margin-bottom: 20px;
-            
+
         }
 
-        .caixa{
+        .caixa {
             margin-top: 300px;
-        background-color: rgba(0, 0, 0, 0.9);
+            background-color: rgba(0, 0, 0, 0.9);
             border: #ff4800 5px solid;
             height: 400px;
             width: 300px;
@@ -97,10 +99,11 @@ font-family: 'Righteous', cursive*/
         }
     </style>
     <div id="menu" style="background-image: url(../imagens/thumb-1920-371350.jpg); height:900px">
-        <div class="caixa"><h1>Jogos Clássicos</h1><br><br>
-        <button onclick="start()">Inicie o Quiz</button> <br><br><br><br>
-        <button onclick="config()">Configurações</button>
-    </div>
+        <div class="caixa">
+            <h1>Jogos Clássicos</h1><br><br>
+            <button onclick="start()">Inicie o Quiz</button> <br><br><br><br>
+            <button onclick="config()">Configurações</button>
+        </div>
     </div>
 
     <div id="configuracoes" style="display:none;">
@@ -130,82 +133,146 @@ font-family: 'Righteous', cursive*/
     </div>
 
     </div>
-    <div class="container_um" id="pergunta_a" style="display:none;"><br> Em metal gear rising: revegeance qual a o personagem que corta o braço de raiden? <br><br>
-        <button onclick="certa();a();"> </button> <br>
-            <button onclick="errada()"> </button> <br>
-                <button onclick="errada()"> </button> <br>
-                    <button onclick="errada()"></button> <br>
+    <div class="container_um" id="pergunta_a" style="display:none;"><br> Em metal gear rising: revegeance qual a o
+        personagem que corta o braço de raiden? <br><br>
+        <button onclick="a();">Sundowner</button> <br>
+        <button onclick="a();">Mistral</button> <br>
+        <button onclick="certa();a();">Jetstream Sam </button> <br>
+        <button onclick="a();">Armstrong</button> <br>
     </div>
-    <div class="container_um" id="pergunta_b" style="display:none;"> Um circuto digital que realiza operações lógicas e
-        aritméticas. Qual é o nome deste componente? <br>
-        <input id="resposta_b" onchange="b()">
+    <div class="container_um" id="pergunta_b" style="display:none;"> <br> Em kenshi, qual o personagem encontrando nas
+        ashlands? <br><br>
+        <button onclick="b();">Tinfist</button> <br>
+        <button onclick="b();">Kenshi</button> <br>
+        <button onclick="certa();b();">Cat-lon </button> <br>
+        <button onclick="b();">Phoenix
+        </button> <br>
     </div>
-    <div class="container_um" id="pergunta_c" style="display:none;"> Tipo de memória que se encontra no topo da hierarquia
-        de memória <br>
-        <input id="resposta_c" onchange="c()">
+    <div class="container_um" id="pergunta_c" style="display:none;"> <br> Em ARK, qual mapa é o primeiro na historia?
+        <br><br>
+        <button onclick="certa();c();">The Island </button> <br>
+        <button onclick="c();">Scorched Earth
+        </button> <br>
+        <button onclick="c();">Aberration
+        </button> <br>
+        <button onclick="c();">Genesis</button> <br>
     </div>
-    <div class="container_um" id="pergunta_d" style="display:none;"> Tipo de memória volátil que tem como nome Random Acess
-        Memory. Qual é a sigla deste componente? <br>
-        <input id="resposta_d" onchange="d()">
+    <div class="container_um" id="pergunta_d" style="display:none;"> <br> Em mario & Luigi: Superstar Saga, qual é o
+        ultimo chefe?
+        <br><br>
+        <button onclick="d();">Bowser</button> <br>
+        <button onclick="d();">Bowser.Jr</button> <br>
+        <button onclick="d();">Fawful</button> <br>
+        <button onclick="certa();d();">Cackletta</button> <br>
     </div>
-    <div class="container_um" id="pergunta_e" style="display:none;"> Tipo de memória não volátil que oferece dados apenas
-        para leitura <br>
-        <input id="resposta_e" onchange="e()">
+    <div class="container_um" id="pergunta_e" style="display:none;"> <br> Em terraria, qual das armas é mais forte?
+        <br><br>
+        <button onclick="e();">The Last Prism</button> <br>
+        <button onclick="e();">Terra Blade</button> <br>
+        <button onclick="certa();e();">Zenith</button> <br>
+        <button onclick="e();">Copper Broadsword</button> <br>
     </div>
-    <div class="container_dois" id="pergunta_f" style="display:none;"> Tipo de memória não volátil que precisa ter seu chip
-        exposto a luz ultravioleta para apagar seu conteúdo <br>
-        <input id="resposta_f" onchange="f()">
+    <div class="container_dois" id="pergunta_f" style="display:none;"> <br> Em Dragon Ball Legends, quem derrotou Omega
+        no evento do segundo aniversario?
+        <br><br>
+        <button onclick="f();">Goku</button> <br>
+        <button onclick="f();">Vegeta</button> <br>
+        <button onclick="f();">Gogeta </button> <br>
+        <button onclick="certa();f();">Vegeto</button> <br>
     </div>
-    <div class="container_dois" id="pergunta_g" style="display:none;"> Tipo particular de EEPROM que mantém as informações
-        armazenadas sem a necessidade de uma fonte de energia elétrica <br>
-        <input id="resposta_g" onchange="g()">
+    <div class="container_dois" id="pergunta_g" style="display:none;"> <br> Em league of legends, quem é o campeão com
+        mais presença em campeonatos:
+        <br><br>
+        <button onclick="certa();g();">Renekton</button> <br>
+        <button onclick="g();">Yorick</button> <br>
+        <button onclick="g();">Darius </button> <br>
+        <button onclick="g();">Garen</button> <br>
     </div>
-    <div class="container_dois" id="pergunta_h" style="display:none;"> Tipo de memória que precisa ter seu conteúdo copiado
-        na RAM para poder ser executado pela CPU <br>
-        <input id="resposta_h" onchange="h()">
+    <div class="container_dois" id="pergunta_h" style="display:none;"> <br> Em hollow Knight, o ultimo chefe é:
+        <br><br>
+        <button onclick="certa();h();">Radiance </button> <br>
+        <button onclick="h();">The Hollow Knight</button> <br>
+        <button onclick="h();">Pure vessel
+        </button> <br>
+        <button onclick="h();">Hornet</button> <br>
     </div>
-    <div class="container_dois" id="pergunta_i" style="display:none;"> Permite que periféricos acessem diretamente a RAM sem
-        ocupar processamento <br>
-        <input id="resposta_i" onchange="i()">
+    <div class="container_dois" id="pergunta_i" style="display:none;"> <br> Em metal gear rising, qual o nome da espada
+        de jetstream sam?
+        <br><br>
+        <button onclick="certa();i();">Murasama</button> <br>
+        <button onclick="i();">Tatical Sai</button> <br>
+        <button onclick="i();">Exalibur
+        </button> <br>
+        <button onclick="i();">Jetstream</button> <br>
     </div>
-    <div class="container_dois" id="pergunta_j" style="display:none;"> Também conhecido como Slave Select (SS). Usado para
-        selecionar um ou um conjunto de circuitos que estão conectados no computador <br>
-        <input id="resposta_j" onchange="j()">
+    <div class="container_dois" id="pergunta_j" style="display:none;"> <br> Qual foi o primeiro deus que kratos matou?
+        <br><br>
+        <button onclick="j();">Ares</button> <br>
+        <button onclick="certa();j();">Persefone</button> <br>
+        <button onclick="j();">Hades </button> <br>
+        <button onclick="j();">Zeus</button> <br>
     </div>
-    <div class="container_tres" id="pergunta_k" style="display:none;"> Grupo de linhas ou trilhas usadas para se referir a um
-        endereço físico na memória. O número de trilhas determina a quantidade de endereços na memória física <br>
-        <input id="resposta_k" onchange="k()">
+    <div class="container_tres" id="pergunta_k" style="display:none;"> <br> Quem não esta presenta em mortal kombat XI?
+        <br><br>
+        <button onclick="certa();k();">Smoke</button> <br>
+        <button onclick="k();">Exterminado do Futuro
+        </button> <br>
+        <button onclick="k();">Kitana
+        </button> <br>
+        <button onclick="k();">Jax</button> <br>
     </div>
-    <div class="container_tres" id="pergunta_l" style="display:none;"> Também chamado de Memory Bus. É responsável para
-        carregar os dados. <br>
-        <input id="resposta_l" onchange="l()">
+    <div class="container_tres" id="pergunta_l" style="display:none;"> <br> Em blasphemous, qual o nome da espada do
+        protagonista?
+        <br><br>
+        <button onclick="l();">Meitou</button> <br>
+        <button onclick="l();">Murasama</button> <br>
+        <button onclick="l();">Blades of Chaos </button> <br>
+        <button onclick="certa();l();">Mea Culpa </button> <br>
     </div>
-    <div class="container_tres" id="pergunta_m" style="display:none;"> Modelo de processador desenvolvido pela Intel quE teve
-        sua primeira versão lançada em setembro de 2009<br>
-        <input id="resposta_m" onchange="m()">
+    <div class="container_tres" id="pergunta_m" style="display:none;"> <br> Em dead cells qual é o nome do ultimo chefe
+        da primera vez que o jogo é completo?
+        <br><br>
+        <button onclick="m();">O coletor</button> <br>
+        <button onclick="m();">Guardiao da ponte</button> <br>
+        <button onclick="certa();m();">Mão do rei</button> <br>
+        <button onclick="m();">O rei
+        </button> <br>
     </div>
-    <div class="container_tres" id="pergunta_n" style="display:none;"> Modelo de processador desenvolvido pela Intel quE teve
-        sua primeira versão lançada em setembro de 2008<br>
-        <input id="resposta_n" onchange="n()">
+    <div class="container_tres" id="pergunta_n" style="display:none;"> <br> Qual o tema da luta contra monsoon em metal
+        gear rising?
+        <br><br>
+        <button onclick="certa();n();">Stains of time </button> <br>
+        <button onclick="n();">Red sun
+        </button> <br>
+        <button onclick="n();">It has to be this way</button> <br>
+        <button onclick="n();">Collective Consiouncess
+        </button> <br>
     </div>
-    <div class="container_tres" id="pergunta_o" style="display:none;"> Tipo de processador que possui dois processadores ou
-        melhor dizendo ‘dois centros, núcleos ou cores de execução‘ no mesmo circuito integrado<br>
-        <input id="resposta_o" onchange="o()">
+    <div class="container_tres" id="pergunta_o" style="display:none;"> <br> Em mortal Kombat XI, quem derrota Kronica?
+        <br><br>
+        <button onclick="o();">Raiden</button> <br>
+        <button onclick="o();">Shao Kahn</button> <br>
+        <button onclick="certa();o();">Liu kang </button> <br>
+        <button onclick="o();">Kung lao</button> <br>
     </div>
-    <div class="container_tres" id="pergunta_p" style="display:none;"> Segue o mesmo princípio de um dual-core, mas agora em
-        teoria tem o dobro da capacidade de processamento<br>
-        <input id="resposta_p" onchange="p()">
+    <div class="container_tres" id="pergunta_p" style="display:none;"> <br> Em fallout new vegas, qual o nome do
+        protagonista? <br><br>
+        <button onclick="p();">Sole Survivor</button> <br>
+        <button onclick="p();">Vault Dweller</button> <br>
+        <button onclick="p();">Lone Wanderer</button> <br>
+        <button onclick="certa();p();">The Courier </button> <br>
     </div>
 
     <div id="final" class="container" style="display:none;">
-        <h2>Você Escapou!</h2>
-        <iframe width="1280" height="720" src="https://www.youtube.com/embed/IhLRGfSPiBw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h2>Você Finalizou!</h2>
+        <div id="msg_pontos"></div> <br>
+        <div id="msg_nivel"></div> <br>
+        <img src="metricas.jpg"> </div> <br>
     </div>
 
 </html>
 <script>
-    var respostas = ['CPU', 'ULA', 'REGISTRADORES', 'RAM', 'ROM', 'EPROM', 'FLASH', 'MEMÓRIA DE MASSA', 'DMA', 'CS', 'ADRESS BUS', 'DATA BUS', 'I5', 'I7', 'DUAL CORE', 'QUAD CORE'];
-
+    
     function start() {
         menu.style.display = 'none';
         configuracoes.style.display = 'none';
@@ -222,72 +289,98 @@ font-family: 'Righteous', cursive*/
         menu.style.display = 'flex';
     }
     var conta = 0
-    function certa(){
+    function certa() {
         conta++
     }
     function a() {
-            pergunta_a.style.display = 'none';
-            pergunta_b.style.display = 'flex';
+        pergunta_a.style.display = 'none';
+        pergunta_b.style.display = 'flex';
     }
     function b() {
-            pergunta_b.style.display = 'none';
-            pergunta_c.style.display = 'flex';
+        pergunta_b.style.display = 'none';
+        pergunta_c.style.display = 'flex';
     }
     function c() {
-            pergunta_c.style.display = 'none';
-            pergunta_d.style.display = 'flex';
+        pergunta_c.style.display = 'none';
+        pergunta_d.style.display = 'flex';
     }
     function d() {
-            pergunta_d.style.display = 'none';
-            pergunta_e.style.display = 'flex';
+        pergunta_d.style.display = 'none';
+        pergunta_e.style.display = 'flex';
     }
     function e() {
-            pergunta_e.style.display = 'none';
-            pergunta_f.style.display = 'flex';
+        pergunta_e.style.display = 'none';
+        pergunta_f.style.display = 'flex';
     }
     function f() {
-            pergunta_f.style.display = 'none';
-            pergunta_g.style.display = 'flex';
+        pergunta_f.style.display = 'none';
+        pergunta_g.style.display = 'flex';
     }
     function g() {
-            pergunta_g.style.display = 'none';
-            pergunta_h.style.display = 'flex';
+        pergunta_g.style.display = 'none';
+        pergunta_h.style.display = 'flex';
     }
     function h() {
-            pergunta_h.style.display = 'none';
-            pergunta_i.style.display = 'flex';
+        pergunta_h.style.display = 'none';
+        pergunta_i.style.display = 'flex';
     }
     function i() {
-            pergunta_i.style.display = 'none';
-            pergunta_j.style.display = 'flex';
+        pergunta_i.style.display = 'none';
+        pergunta_j.style.display = 'flex';
     }
     function j() {
-            pergunta_j.style.display = 'none';
-            pergunta_k.style.display = 'flex';
+        pergunta_j.style.display = 'none';
+        pergunta_k.style.display = 'flex';
     }
     function k() {
-            pergunta_k.style.display = 'none';
-            pergunta_l.style.display = 'flex';
+        pergunta_k.style.display = 'none';
+        pergunta_l.style.display = 'flex';
     }
     function l() {
-            pergunta_l.style.display = 'none';
-            pergunta_m.style.display = 'flex';
+        pergunta_l.style.display = 'none';
+        pergunta_m.style.display = 'flex';
     }
     function m() {
-            pergunta_m.style.display = 'none';
-            pergunta_n.style.display = 'flex';
+        pergunta_m.style.display = 'none';
+        pergunta_n.style.display = 'flex';
     }
     function n() {
-            pergunta_n.style.display = 'none';
-            pergunta_o.style.display = 'flex';
+        pergunta_n.style.display = 'none';
+        pergunta_o.style.display = 'flex';
     }
     function o() {
-            pergunta_o.style.display = 'none';
-            pergunta_p.style.display = 'flex';
+        pergunta_o.style.display = 'none';
+        pergunta_p.style.display = 'flex';
     }
     function p() {
-            pergunta_p.style.display = 'none';
-            final.style.display = 'flex';
+        pergunta_p.style.display = 'none';
+        final.style.display = 'flex';
+        if (conta == 1) {
+            msg_pontos.innerHTML = 'Você obteve 1 ponto';
+            msg_nivel.innerHTML = 'Você está no nível Recruta!';
+        } else if (conta==0) {
+            msg_pontos.innerHTML = 'Você obteve 0 pontos';
+            msg_nivel.innerHTML = 'Você está no nível Recruta!';
+        }
+        else if (conta == 2 || conta == 3) {
+            msg_pontos.innerHTML = `Você obteve ${conta} pontos`;
+            msg_nivel.innerHTML = 'Você está no nível Recruta!';
+        } else if(conta >=4 && conta<=7){
+            msg_pontos.innerHTML = `Você obteve ${conta} pontos`;
+            msg_nivel.innerHTML = 'Você está no nível Treinado!';
+        } else if(conta >=8 && conta<=10){
+            msg_pontos.innerHTML = `Você obteve ${conta} pontos`;
+            msg_nivel.innerHTML = 'Você está no nível Regular!';
+        } else if(conta >=11 && conta<=13){
+            msg_pontos.innerHTML = `Você obteve ${conta} pontos`;
+            msg_nivel.innerHTML = 'Você está no nível Experiente!';
+        } else{
+            msg_pontos.innerHTML = `Você obteve ${conta} pontos`;
+            msg_nivel.innerHTML = 'Você está no nível Veterano!';
+        }
     }
+
+
+
 
 </script>
